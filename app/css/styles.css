@@ -1,0 +1,61 @@
+.geocoder {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, .9);
+    padding: 15px;
+    text-align: left;
+    font-family: 'Arial';
+    margin: 0;
+    font-size: 13px;
+}
+
+body {
+    margin:0;
+    padding:0;
+}            
+
+#map {
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+    height: 100%
+}
+
+.slot-marker {
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    max-width: 240px;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 15px;
+}
+
+.slot-free {
+    background-image: url('icons/park-free-icon.png');
+}
+
+.slot-occupied {
+    background-image: url('icons/park-occupied-icon.png');
+}
+
+.slot-reserved {
+    background-image: url('icons/park-occupied-icon.png');
+}
+
+.slot-unknown {
+    background-image: url('icons/park-unknown-icon.png');
+}
+
+.slot-selected {
+    background-image: url('icons/park-selected-icon.png');
+}
