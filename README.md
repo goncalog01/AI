@@ -18,25 +18,25 @@
 - Install motion: `sudo apt-get install motion`
 
 - Change the `/etc/motion/motion.conf` file to the following settings:
-
-    daemon off
-    emulate_motion off
-    log_file /home/grupo7/motion/log/motion.log
-    target_dir /home/grupo7/motion 
-    snapshot_interval 15 (can be written anywhere, for eg after post_capture)
-    movie_output off
-    uncomment camera1.conf and write /home/grupo7/motion/configs/camera1.conf
-    (uncomment the others if you have more cameras)
-
+```
+daemon off
+emulate_motion off
+log_file /home/grupo7/motion/log/motion.log
+target_dir /home/grupo7/motion 
+snapshot_interval 15 (can be written anywhere, for eg after post_capture)
+movie_output off
+uncomment camera1.conf and write /home/grupo7/motion/configs/camera1.conf
+(uncomment the others if you have more cameras)
+```
 - Create a new directory named `motion` at the `grupo7` directory and subdirs `motion/snapshots`, `motion/log`, `motion/configs`
 
 The following camera instructions are for a PlayStation 3 Eye camera, so it may differ for other cameras:
 
 - Inside `motion/configs` create a file named `camera1.conf` with the following:
-
-    videodevice /dev/video0
-    snapshot_filename /snapshots/%v-%Y%m%d%H%M%S-camera1
-
+```
+videodevice /dev/video0
+snapshot_filename /snapshots/%v-%Y%m%d%H%M%S-camera1
+```
 - If there are more cameras do the same for each one, changing to the correct videodevice and filename to camera2, 3, 4, etc.
 
 - Reboot
